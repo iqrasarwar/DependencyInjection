@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Employee>;
+
+    <div>
+        <table>
+
+            <thead>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Name
+                </th>
+            </thead>
+        </table>
+        <tbody>
+            @foreach (Employee emp in Model)
+            {
+            <tr>
+                <td>@emp.id</td>
+                <td>@emp.Name</td>
+            </tr>
+        }
+        </tbody>
+    </div>
